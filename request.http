@@ -1,0 +1,68 @@
+### GET request to example server
+GET http://localhost:8080/api/v1/animals
+
+### GET request to example server
+GET http://localhost:8080/api/v1/dogs
+
+### GET request to example server
+GET http://localhost:8080/api/v1/cats
+
+### GET request to example server
+GET http://localhost:8080/api/v1/cats/1
+
+
+
+###
+POST http://localhost:8080/api/v1/animals
+Content-Type: application/json
+
+{
+  "age": 1,
+  "weight": 20,
+  "gender": "female",
+  "name": "Goldie"
+}
+
+###
+POST http://localhost:8080/api/v1/dogs
+Content-Type: application/json
+
+{
+  "age": 1,
+  "weight": 20,
+  "gender": "female",
+  "name": "Goldie",
+  "colour": "Golden",
+  "size": "medium",
+  "breed": "common"
+}
+
+###
+POST http://localhost:8080/api/v1/cats
+Content-Type: application/json
+
+{
+  "age": 1,
+  "weight": 20,
+  "gender": "female",
+  "name": "Goldie",
+  "colour": "Golden",
+  "size": "medium",
+  "breed": "common"
+}
+
+###
+PUT http://localhost:8080/api/v1/cats/1
+Content-Type: application/json
+
+{
+  "colour": "White",
+  "breed": "common",
+  "size": "medium"
+}
+
+###
+DELETE http://localhost:8080/api/v1/cats/1
+
+
+
