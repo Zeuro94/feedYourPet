@@ -18,13 +18,5 @@ public class Animal {
     private int age;
     private String gender;
     private int weight;
-
-    public Animal(long id, String name, int age, String gender, int weight) {
-        this.id = id;
-        this.name = name;
-        this.age = age;
-        this.gender = gender;
-        this.weight = weight;
-    }
 }
 
