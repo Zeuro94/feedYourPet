@@ -2,6 +2,7 @@ package com.example.feedyourpet.dog;
 
 import com.example.feedyourpet.animal.Animal;
 import jakarta.persistence.Entity;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -10,6 +11,7 @@ import lombok.Setter;
 @Setter
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 public class Dog extends Animal {
     private String colour;
     private String size;
