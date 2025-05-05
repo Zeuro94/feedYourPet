@@ -1,4 +1,4 @@
-package com.example.feedYourPet.dog;
+package com.example.feedyourpet.dog;
 
 import org.springframework.stereotype.Service;
 
@@ -14,7 +14,11 @@ public class DogService {
         this.dogRepository = dogRepository;
     }
 
-    public List<Dog> getAllDogs() {return dogRepository.findAll();}
+    public List<Dog> getAllDogs() {
+        return dogRepository.findAll();
+    }
 
-    public void addNewDog(Dog dog) {dogRepository.save(dog);}
+    public void addNewDog(Dog dog) {
+        dogRepository.save(dog);
+    }
 }

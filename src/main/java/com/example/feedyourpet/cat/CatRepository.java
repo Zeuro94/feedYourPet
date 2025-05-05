@@ -1,4 +1,4 @@
-package com.example.feedYourPet.cat;
+package com.example.feedyourpet.cat;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

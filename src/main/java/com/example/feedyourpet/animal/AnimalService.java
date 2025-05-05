@@ -1,4 +1,4 @@
-package com.example.feedYourPet.animal;
+package com.example.feedyourpet.animal;
 
 import org.springframework.stereotype.Service;
 

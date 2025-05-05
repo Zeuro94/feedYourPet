@@ -1,4 +1,4 @@
-package com.example.feedYourPet;
+package com.example.feedyourpet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -6,8 +6,9 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest
 class FeedYourPetApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Test
+    void contextLoads() {
+        // TODO document why this method is empty
+    }
 
 }
