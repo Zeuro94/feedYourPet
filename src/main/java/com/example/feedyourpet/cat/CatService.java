@@ -1,5 +1,6 @@
 package com.example.feedyourpet.cat;
 
+import com.example.feedyourpet.exceptions.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -20,7 +21,7 @@ public class CatService {
     public Cat getCatById(Long id) {
         return catRepository.findById(id)
                 .orElseThrow(
-                        () -> new RuntimeException("Cat not found for id :: " + id)
+                        () -> new ResourceNotFoundException("Cat not found for id :: " + id)
                 );
     }
 
@@ -41,7 +42,7 @@ public class CatService {
     public void deleteCatById(Long id) {
         boolean exists = catRepository.existsById(id);
         if (!exists) {
-            throw new RuntimeException("Cat not found for id :: " + id);
+            throw new ResourceNotFoundException("Cat not found for id :: " + id);
         }
         catRepository.deleteById(id);
     }

@@ -1,14 +1,14 @@
 ### GET request to example server
-GET http://localhost:8080/api/v1/animals
+GET http://localhost:8080/api/v1/animals/1
 
 ### GET request to example server
 GET http://localhost:8080/api/v1/dogs
 
 ### GET request to example server
-GET http://localhost:8080/api/v1/cats
+GET http://localhost:8080/api/v1/cats/1
 
 ### GET request to example server
-GET http://localhost:8080/api/v1/cats/1
+GET http://localhost:8080/api/v1/dogs/10
 
 
 
@@ -33,7 +33,7 @@ Content-Type: application/json
   "gender": "female",
   "name": "Goldie",
   "colour": "Golden",
-  "size": "medium",
+  "size": "a",
   "breed": "common"
 }
 
@@ -64,5 +64,15 @@ Content-Type: application/json
 ###
 DELETE http://localhost:8080/api/v1/cats/1
 
+###
+POST http://localhost:8080/api/v1/users
+Content-Type: application/json
 
+{
+  "username": "lulu",
+  "password": "Antonio!@",
+  "email": "female@email.com",
+  "phoneNumber": "0729516638",
+  "preferredNotificationMethod": "Golden"
+}
 

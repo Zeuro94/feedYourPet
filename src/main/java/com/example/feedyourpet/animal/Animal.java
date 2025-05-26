@@ -18,5 +18,6 @@ public class Animal {
     private int age;
     private String gender;
     private int weight;
+    private int height;
 }
 
