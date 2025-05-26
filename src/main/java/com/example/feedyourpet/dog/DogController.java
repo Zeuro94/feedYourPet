@@ -1,5 +1,6 @@
 package com.example.feedyourpet.dog;
 
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -27,7 +28,8 @@ public class DogController {
 
     @PostMapping()
     public void addNewDog(
-            @RequestBody Dog dog) {
+            @RequestBody
+            @Valid Dog dog) {
         dogService.addNewDog(dog);
     }
 

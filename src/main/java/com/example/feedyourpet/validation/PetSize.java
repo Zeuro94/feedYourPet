@@ -12,7 +12,7 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = PetSizeValidator.class)
 public @interface PetSize {
-    String message() default "Invalid pet size";
+    String message() default "Size must be one of: small, medium, large";
 
     Class<?>[] groups() default {};
 
